@@ -1,0 +1,1 @@
+测试spring框架的Resource接口
