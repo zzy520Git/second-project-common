@@ -1,3 +1,4 @@
 测试spring框架的Resource接口
 测试dev分支
 测试将本地其他分支合并到远程master分支？？？##zzy
+测试将本地dev分支合并到远程master分支
