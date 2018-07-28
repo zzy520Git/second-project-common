@@ -80,6 +80,13 @@
       <version>${spring.version}</version>
     </dependency>
 
+    <!-- 自定义aop支持 -->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.10</version>
+    </dependency>
+
     <!-- lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -87,6 +94,7 @@
       <version>1.16.6</version>
     </dependency>
 
+    <!-- junit -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -97,7 +105,19 @@
   </dependencies>
 
   <build>
-    <finalName>second-project-common</finalName>
+    <finalName>${project.artifactId}</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.3</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
 
   </build>
 

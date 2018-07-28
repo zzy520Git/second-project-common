@@ -75,14 +75,6 @@
     <!--</context:component-scan>-->
 
 
-    <!--加载配置文件-->
-    <!--<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
-        <!--<property name="locations">-->
-            <!--<list>-->
-                <!--<value>classpath:conf/important.properties</value>-->
-            <!--</list>-->
-        <!--</property>-->
-    <!--</bean>-->
 
     <!--引入Spring配置文件-->
     <!--<import resource="spring-config-dao.xml"/>-->
