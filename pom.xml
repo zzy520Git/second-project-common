@@ -12,7 +12,7 @@
   <url>http://maven.apache.org</url>
 
   <properties>
-    <spring.version>4.3.10.RELEASE</spring.version>
+    <spring.version>4.3.18.RELEASE</spring.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <java.version>1.8</java.version>
   </properties>
@@ -100,6 +100,121 @@
       <version>4.12</version>
       <scope>test</scope>
     </dependency>
+
+    <!-- 查看源代码 -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.12</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-lang3</artifactId>
+      <version>3.4</version>
+    </dependency>
+    <!-- jim -->
+    <dependency>
+      <groupId>com.jd.jim.cli</groupId>
+      <artifactId>jim-cli-jedis</artifactId>
+      <version>1.4.5-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jd.jim.cli</groupId>
+      <artifactId>jim-cli-api</artifactId>
+      <version>1.4.5-SNAPSHOT</version>
+    </dependency>
+    <!-- jmq -->
+    <dependency>
+      <groupId>com.jd.jmq</groupId>
+      <artifactId>jmq-client-spring</artifactId>
+      <version>2.1.4</version>
+    </dependency>
+    <!-- 发送短信 -->
+    <dependency>
+      <groupId>com.jd.mobilePhoneMsg.sender</groupId>
+      <artifactId>mobilePhoneMsg-sender-client-jsf</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <!-- 生成二维码 -->
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>core</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.zxing</groupId>
+      <artifactId>javase</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+
+    <dependency>
+    <groupId>com.jd.mobilePhoneMsg.sender</groupId>
+    <artifactId>mobilePhoneMsg-sender-client-jsf</artifactId>
+      <version>3.0-SNAPSHOT</version>
+    </dependency>
+
+    <!-- jsf -->
+    <dependency>
+      <groupId>com.jd</groupId>
+      <artifactId>jsf</artifactId>
+      <version>1.6.5</version>
+    </dependency>
+    <!-- imageUpload -->
+    <dependency>
+      <groupId>image-common</groupId>
+      <artifactId>image-common</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jd.common</groupId>
+      <artifactId>jd-common-util</artifactId>
+      <version>1.1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jd.ump</groupId>
+      <artifactId>jannotation</artifactId>
+      <version>4.1.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jd.nb</groupId>
+      <artifactId>nb-common</artifactId>
+      <version>1.1-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.guava</groupId>
+      <artifactId>guava</artifactId>
+      <version>14.0.1</version>
+    </dependency>
+    <dependency>
+      <groupId>com.jd.ump</groupId>
+      <artifactId>profiler</artifactId>
+      <version>4.1.0</version>
+    </dependency>
+    <!-- 部门内部异常处理工具类-->
+    <dependency>
+      <groupId>com.jd.nb</groupId>
+      <artifactId>nb-framework-exception</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+    <!-- 部门内部缓存处理工具类-->
+    <dependency>
+      <groupId>com.jd.nb</groupId>
+      <artifactId>nb-framework-cache</artifactId>
+      <version>1.0-SNAPSHOT</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>aspectjweaver</artifactId>
+          <groupId>org.aspectj</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>4.1.4</version>
+    </dependency>
+
 
   </dependencies>
 
