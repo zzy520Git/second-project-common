@@ -35,7 +35,7 @@ public class AspectBean {
      * around增强处理，功能最强大，优先级最高，可以阻止方法执行，改变返回值，改变实参等一系列操作
      * @param pjp around增强处理的第一个形参必须是ProceedingJoinPoint类型
      * @return 返回实际目标方法返回值
-     * 注意：around增强处理通常需要在线程安全的条件下执行，所以请尽量少用以免出错
+     * 注意：around增强处理通常需要在线程安全的条件下执行，即不能用成员变量共享数据
      */
     @Around("execution(* com.spring.serviceimpl.ModelServiceImpl.queryAge(..))")
     public Object aroundAdvice(ProceedingJoinPoint pjp) {
